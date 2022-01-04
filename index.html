@@ -17,8 +17,7 @@
         <div class="sidebar-btn">
                 <div class="box-ce icon-container" id="sidebar-btn-ce">
                 <span class="material-icons-outlined sidebar-navigate-c">navigate_next</span>
-                <span class="material-icons-outlined sidebar-navigate">navigate_before</span>
-        </div>
+                </div>
         </div>   
         <ul class="sidebar-opts">
         <li>
@@ -26,9 +25,9 @@
                         <span class="material-icons-outlined tooltip-hover">account_circle</span>
                                 <span class="link_name span-text">Perfil</span>
                 </a>
-                <!-- <li><a class="sidebar-tooltip" href="index.html">Perfil</a></li> -->
-                <ul>
-                </ul>
+                <!-- <div class="box-tooltip">
+                        <a class="sidebar-tooltip" href="index.html">Perfil</a>
+                </div> -->
         </li>
         <li>
                 <a class="aref-icons-text" href="#">
@@ -36,13 +35,11 @@
                                 <span class="link_name span-text">Mi Market</span>
                 </a>
                 <!-- <li><a class="sidebar-tooltip">Mi Market</a></li> -->
-                <ul>
-                </ul>
         </li>
         <li>
                 <div class="arrow-container ac-config">
                         <div class="aref-icons-text">
-                                <span class="material-icons-outlined tooltip-hover">settings</span>
+                                <span class="material-icons-outlined tooltip-hover deg-settings">settings</span>
                                 <span class="link_name span-text">Configuracion</span>
                                 <span class="material-icons-outlined sidebar-arrow">expand_more<span>
                         </div>
@@ -50,7 +47,7 @@
                 <!-- <li><a class="sidebar-tooltip">Configuracion</a></li>
                         <li><a href="#">Tema</a></li> -->
                 <div class="sidebar-submenu ss-config">
-                        <a href="#">Tema</a>
+                        <div class="modal-teme-show">Tema</div>
                         <a href="#">Sonido</a>
                 </div>
         </li>
@@ -71,7 +68,36 @@
         </li>
         </ul>
     </div>
-
+    <section class="modal-temes">
+        <div class="modal-teme-container">
+                <div class="modal-teme-close-btn">
+                        <span class="material-icons-outlined">close</span>
+                </div>
+                <h1>Temas</h1>
+                <div class="modal-box-teme teme-btn-black">
+                        <div class="box-teme-selector">
+                                <h3>Oscuro</h3>
+                        </div>
+                        <div class="teme-black-box-bg1 teme-box"></div>
+                        <div class="teme-black-box-block1 teme-box"></div>
+                </div>
+                <div class="modal-box-teme teme-btn-blue">
+                        <div class="box-teme-selector">
+                                <h3>Azul</h3>
+                        </div>
+                        <div class="teme-blue-box-bg2 teme-box"></div>
+                        <div class="teme-blue-box-block2 teme-box"></div>
+                </div>
+                <div class="modal-box-teme teme-btn-white">
+                        <div class="box-teme-selector">
+                                <h3>Claro</h3>
+                        </div>
+                        <div class="teme-white-box-bg3 teme-box"></div>
+                        <div class="teme-white-box-block3 teme-box"></div>
+                </div>
+                <div class="modal-box-teme"></div>
+        </div>
+    </section>
     
 
     
@@ -80,7 +106,7 @@
             <div class="menu-search">
                 <div class="box-search boxs wh100">
                         <div class="circle-search icon-container">
-                                <span class="material-icons-outlined">search</span>
+                                <span class="material-icons-outlined var-bg1">search</span>
                         </div>
                         <input type="search" class="input-search-box" placeholder="Buscar">
                 </div>
@@ -125,7 +151,6 @@
                     <div class="box-events boxs"></div>
             </div>
     </section>
-    <section class="space3"></section>
     <!-- <a class="button-home" href="/">Home</a> -->
     <script src="beta_copy.js"></script>
 </body>
