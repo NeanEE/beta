@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Material+Icons+Outlined">
+    <link rel="stylesheet" href="beta_1.0.1.css">
+    <title>Menu BETA 1.0.1</title>
+</head>
+<body class="body-menu">
+    <div class="simple-mode">
+                <span class="material-icons-outlined var--fz3">elderly</span>
+                <div class="simple-mode-tooltip simple-mode__text var--text">Modo Simple</div>
+    </div>
+    <div class="menu-sidebar" id="menu-sidebar-selector">
+        <div class="sidebar__btn">
+            <div class="sidebar__title">
+                <span class="material-icons-outlined sidebar__title--span var--fz4 var--text">pentagon</span>
+                <h4 class="var-text var--text">EEEEE</h4>
+            </div>
+            <div class="box__ce icon--container" id="sidebar-btn-ce">
+                <span class="material-icons-outlined sidebar-navigate-c var--fz5 var--text">navigate_next</span>
+            </div>
+        </div>   
+    <ul class="sidebar-opts">
+        <li class="sidebar-opts__box ac-account">
+                                <span class="material-icons-outlined tooltip-hover var--fz2 var--text">account_circle</span>
+                                <span class="link_name span--text var--text">Perfil</span>
+        </li>
+        <li class="sidebar-opts__box" id="ac-store">
+                                <span class="material-icons-outlined tooltip-hover var--fz2 var--text">store</span>
+                                <span class="link_name span--text var--text">Mi Market</span>
+                                <span class="material-icons-outlined sidebar-arrow var--text">expand_more<span>
+        </li>
+                <div class="sub-menu__active down__config" id="ss-store">
+                        <div class="sidebar__submenu__box var--text">Upgrade</div>
+                </div>
+                <div class="sub-menu__tooltip sub-menu__tooltip--disable" id="sub-menu-tooltip">
+                        <div class="sub-menu__tooltip__title var--text">Mi Market</div>
+                        <div class="sub-menu__tooltip__box var--text">Upgrade</div>
+                </div>
+        <li class="sidebar-opts__box" id="ac-config">
+                <span class="material-icons-outlined tooltip-hover var--fz2 var--text">settings</span>
+                <span class="link_name span--text var--text">Configuracion</span>
+                <span class="material-icons-outlined sidebar-arrow var--text">expand_more</span>
+        </li>
+                <div class="sub-menu__active down__config" id="ss-config">
+                        <div class="sidebar__submenu__box var--text" id="modal-temes__show">Tema</div>
+                        <a class="sidebar__submenu__box var--text" href="arefej.html">Sonido</a>
+                </div>
+        <li class="sidebar-opts__box" id="ac-accounts">
+                <span class="material-icons-outlined tooltip-hover var--fz2 var--text">manage_accounts</span>
+                <span class="link_name span--text var--text">Cuenta</span>
+                <span class="material-icons-outlined sidebar-arrow var--text">expand_more<span>
+        </li>
+                <div class="sub-menu__active down__config" id="ss-accounts">
+                        <div class="sidebar__submenu__box var--text">Mis datos</div>
+                        <div class="sidebar__submenu__box var--text">Salir</div>
+                </div>
+    </ul>
+    </div>
+    <section class="modal-temes">
+<div class="modal-temes__container">
+        <div class="modal-temes__close-btn">
+                <span class="material-icons-outlined modal-temes__close-btn__btn">close</span>
+        </div>
+        <h1 class="var--text">Temas</h1>
+        <div class="modal__box__teme" id="teme__btn__black">
+                <div class="box-teme__selector">
+                        <h3 class="box-teme__selector-cont var--text">Oscuro</h3>
+                </div>
+                <div class="teme-black-box-bg1 teme__box"></div>
+                <div class="teme-black-box-block1 teme__box"></div>
+        </div>
+        <div class="modal__box__teme" id="teme__btn__blue">
+                <div class="box-teme__selector">
+                        <h3 class="box-teme__selector-cont var--text">Azul</h3>
+                </div>
+                <div class="teme-blue-box-bg2 teme__box"></div>
+                <div class="teme-blue-box-block2 teme__box"></div>
+        </div>
+        <div class="modal__box__teme" id="teme__btn__white">
+                <div class="box-teme__selector">
+                        <h3 class="box-teme__selector-cont var--text">Claro</h3>
+                </div>
+                <div class="teme-white-box-bg3 teme__box"></div>
+                <div class="teme-white-box-block3 teme__box"></div>
+        </div>
+        <div class="modal__box__teme"></div>
+</div>
+    </section>
+    <!-- <section class="space1"></section> -->
+    <div class="menu-grid-container">
+        <title class="menu-title wh--100"></title>
+        <section class="menu-container-1 wh--100">
+                <div class="menu-search">
+                        <div class="box__search boxs wh--100">
+                                <div class="circle__search icon--container">
+                                        <span class="material-icons-outlined var--text">search</span>
+                                </div>
+                                <input type="search" class="input-search-box" placeholder="Buscar">
+                        </div>
+                </div>
+                <div class="menu__boe">
+                        <div class="box-boe boxs wh--100"></div>
+                </div>
+                <div class="menu__pys">
+                        <div class="menu__productos">
+                                <div class="box__productos boxs wh--100"></div>
+                        </div>
+                        <div class="menu__servicios">
+                                <div class="box__servicios boxs wh--100"></div>
+                        </div>
+                </div>
+                <div class="space__cont1"></div>
+                <div class="menu__advert">
+                        <div class="box__advert boxs wh--100"></div>
+                </div>
+                <div class="space__cont1"></div>
+                <div class="menu__market-box">
+                        <div class="market__box boxs wh--100"></div>
+                                        <div class="box-sing"></div>
+                </div>
+                <div class="menu__dash-block">
+                        <div class="dash-block__box boxs wh--100"></div>
+                </div>
+                <div class="space__cont2"></div>
+                <div class="menu-radio">
+                                <div class="box__radio boxs wh--100"></div>   
+                </div>
+                <div class="menu-clima">
+                        <div class="box__clima boxs wh--100"></div>
+                </div>
+        </section>
+        <!-- <section class="space2"></section> -->
+        <section class="menu-container-2 wh--100">
+
+                <div class="menu-new">
+                        <div class="box__new boxs wh--100"></div>
+                </div>
+                <div class="menu-events">
+                        <div class="box__events boxs"></div>
+                </div>
+        </section>
+        <section class="menu-container-3 wh--100"></section>
+        <footer class="menu-footer wh--100"></footer>
+    </div>
+    <!-- <a class="button-home" href="/">Home</a> -->
+    <script src="beta_1.0.1.js"></script>
+</body>
+</html>
