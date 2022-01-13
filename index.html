@@ -1,99 +1,136 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
+        <head>
+                <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Signika+Negative&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Material+Icons+Outlined">
+    <script src="https://kit.fontawesome.com/f11779bb83.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="beta_1.0.1.css">
     <title>Menu BETA 1.0.1</title>
 </head>
 <body class="body-menu">
-    <div class="simple-mode">
-                <span class="material-icons-outlined var--fz3">elderly</span>
-                <div class="simple-mode-tooltip simple-mode__text var--text">Modo Simple</div>
-    </div>
-    <div class="menu-sidebar" id="menu-sidebar-selector">
-        <div class="sidebar__btn">
-            <div class="sidebar__title">
-                <span class="material-icons-outlined sidebar__title--span var--fz4 var--text">pentagon</span>
-                <h4 class="var-text var--text">EEEEE</h4>
-            </div>
-            <div class="box__ce icon--container" id="sidebar-btn-ce">
-                <span class="material-icons-outlined sidebar-navigate-c var--fz5 var--text">navigate_next</span>
-            </div>
-        </div>   
-    <ul class="sidebar-opts">
-        <li class="sidebar-opts__box ac-account">
-                                <span class="material-icons-outlined tooltip-hover var--fz2 var--text">account_circle</span>
-                                <span class="link_name span--text var--text">Perfil</span>
-        </li>
-        <li class="sidebar-opts__box" id="ac-store">
-                                <span class="material-icons-outlined tooltip-hover var--fz2 var--text">store</span>
-                                <span class="link_name span--text var--text">Mi Market</span>
-                                <span class="material-icons-outlined sidebar-arrow var--text">expand_more<span>
-        </li>
-                <div class="sub-menu__active down__config" id="ss-store">
-                        <div class="sidebar__submenu__box var--text">Upgrade</div>
+        <div class="utility-buttons-container" id="u-b-c">
+                <div class="ubb__container ubb__container__sm" id="u-buttons__sm">
+                        <div class="utility-buttons__button ubb__sm">
+                                <span class="material-icons-outlined var--fz3">elderly</span>
+                                <div class="buttons__text-disable var--text">Modo Simple</div>
+                        </div>
                 </div>
-                <div class="sub-menu__tooltip sub-menu__tooltip--disable" id="sub-menu-tooltip">
-                        <div class="sub-menu__tooltip__title var--text">Mi Market</div>
-                        <div class="sub-menu__tooltip__box var--text">Upgrade</div>
+                <a class="ubb__container ubb__container__hm" id="u-buttons__hm" href="index.html">
+                        <div class="utility-buttons__button ubb__hm">
+                                <span class="material-icons-outlined">home</span>
+                        </div>
+                </a>
+                <div class="ubb__container ubb__container__in" id="u-buttons__in">
+                        <div class="utility-buttons__button ubb__in">
+                                <span class="material-icons-outlined">info</span>
+                        </div>
                 </div>
-        <li class="sidebar-opts__box" id="ac-config">
-                <span class="material-icons-outlined tooltip-hover var--fz2 var--text">settings</span>
-                <span class="link_name span--text var--text">Configuracion</span>
-                <span class="material-icons-outlined sidebar-arrow var--text">expand_more</span>
-        </li>
-                <div class="sub-menu__active down__config" id="ss-config">
-                        <div class="sidebar__submenu__box var--text" id="modal-temes__show">Tema</div>
-                        <a class="sidebar__submenu__box var--text" href="arefej.html">Sonido</a>
-                </div>
-        <li class="sidebar-opts__box" id="ac-accounts">
-                <span class="material-icons-outlined tooltip-hover var--fz2 var--text">manage_accounts</span>
-                <span class="link_name span--text var--text">Cuenta</span>
-                <span class="material-icons-outlined sidebar-arrow var--text">expand_more<span>
-        </li>
-                <div class="sub-menu__active down__config" id="ss-accounts">
-                        <div class="sidebar__submenu__box var--text">Mis datos</div>
-                        <div class="sidebar__submenu__box var--text">Salir</div>
-                </div>
-    </ul>
-    </div>
-    <section class="modal-temes">
-<div class="modal-temes__container">
-        <div class="modal-temes__close-btn">
-                <span class="material-icons-outlined modal-temes__close-btn__btn">close</span>
+        </div> 
+        <!-- SIDEBAR -->
+        <div class="menu-sidebar var--fontSN" id="menu-sidebar-selector">
+                <div class="sidebar__btn">
+                    <div class="sidebar__title">
+                        <span class="material-icons-outlined sidebar__title--span var--icons var--text">pentagon</span>
+                        <h4 class="var-text var--text">EEEEE</h4>
+                    </div>
+                    <div class="box__ce icon--container" id="sidebar-btn-ce">
+                        <span class="material-icons-outlined sidebar-navigate-c var--fz5 var--text">navigate_next</span>
+                    </div>
+                </div>   
+                <ul class="sidebar-opts">
+
+                <li class="sidebar-opts__box" id="ac-accounts">
+                        <span class="material-icons-outlined tooltip-hover var--fz2 var--text">account_circle</span>
+                        <span class="link_name span--text var--text">Cuenta</span>
+                        <span class="material-icons-outlined sidebar-arrow var--text">expand_more<span>
+                </li>
+                        <li class="sub-menu__active down__config" id="ss-accounts">
+                                <a class="sidebar__submenu__box var--text" href="profile.html">Perfil</a>
+                                <div class="sidebar__submenu__box var--text">MC MC</div>
+                                <div class="sidebar__submenu__box sidebar__submenu__box--2 var--text">MPM PMPMPMPMPM</div>
+                        </li>            
+                
+                <li class="sidebar-opts__box" id="ac-store">
+                        <span class="material-icons-outlined tooltip-hover var--fz2 var--text">store</span>
+                        <span class="link_name span--text var--text">MM MMMMMM</span>
+                        <span class="material-icons-outlined sidebar-arrow var--text">expand_more<span>
+                </li>
+                        <li class="sub-menu__active down__config" id="ss-store">
+                                <div class="sidebar__submenu__box var--text">Registrar</div>
+                        </li>
+                
+                <li class="sidebar-opts__box" id="ac-contact">
+                        <span class="material-icons-outlined tooltip-hover var--fz2 var--text">contact_phone</span>
+                        <span class="link_name span--text var--text">Contacto</span>
+                        <span class="material-icons-outlined sidebar-arrow var--text">expand_more<span>
+                </li>
+                        <li class="sub-menu__active down__config" id="ss-contact">
+                                <div class="sidebar__submenu__box sidebar__submenu__box--2 var--text">Enviar Comentaio</div>
+                        </li>
+                        
+                <li class="sidebar-opts__box" id="ac-config">
+                                <span class="material-icons-outlined tooltip-hover var--fz2 var--text">settings</span>
+                                <span class="link_name span--text var--text">Configuracion</span>
+                                <span class="material-icons-outlined sidebar-arrow var--text">expand_more</span>
+                </li>
+                        <li class="sub-menu__active down__config" id="ss-config">
+                                <div class="sidebar__submenu__box var--text">Notificaciones</div>
+                                <div class="sidebar__submenu__box var--text" id="modal-temes__show">Tema</div>
+                                <div class="sidebar__submenu__box var--text">Salir</div>
+                        </li>
+                        
+                </ul>
         </div>
-        <h1 class="var--text">Temas</h1>
-        <div class="modal__box__teme" id="teme__btn__black">
-                <div class="box-teme__selector">
-                        <h3 class="box-teme__selector-cont var--text">Oscuro</h3>
+        <!-- MODAL-COLORES -->
+        <section class="modal-temes">
+        <div class="modal-temes__container">
+                <div class="modal-temes__close-btn">
+                        <span class="material-icons-outlined modal-temes__close-btn__btn">close</span>
                 </div>
-                <div class="teme-black-box-bg1 teme__box"></div>
-                <div class="teme-black-box-block1 teme__box"></div>
-        </div>
-        <div class="modal__box__teme" id="teme__btn__blue">
-                <div class="box-teme__selector">
-                        <h3 class="box-teme__selector-cont var--text">Azul</h3>
+                <h1 class="var--text">Temas</h1>
+                <div class="modal__box__teme" id="teme__btn__black">
+                        <div class="box-teme__selector">
+                                <h3 class="box-teme__selector-cont var--text">Oscuro</h3>
+                        </div>
+                        <div class="teme-black-box-bg1 teme__box"></div>
+                        <div class="teme-black-box-block1 teme__box"></div>
                 </div>
-                <div class="teme-blue-box-bg2 teme__box"></div>
-                <div class="teme-blue-box-block2 teme__box"></div>
-        </div>
-        <div class="modal__box__teme" id="teme__btn__white">
-                <div class="box-teme__selector">
-                        <h3 class="box-teme__selector-cont var--text">Claro</h3>
+                <div class="modal__box__teme" id="teme__btn__white">
+                        <div class="box-teme__selector">
+                                <h3 class="box-teme__selector-cont var--text">Claro</h3>
+                        </div>
+                        <div class="teme-white-box-bg3 teme__box"></div>
+                        <div class="teme-white-box-block3 teme__box"></div>
                 </div>
-                <div class="teme-white-box-bg3 teme__box"></div>
-                <div class="teme-white-box-block3 teme__box"></div>
+                <div class="modal__box__teme" id="teme__btn__blue">
+                        <div class="box-teme__selector">
+                                <h3 class="box-teme__selector-cont var--text">Azul</h3>
+                        </div>
+                        <div class="teme-blue-box-bg2 teme__box"></div>
+                        <div class="teme-blue-box-block2 teme__box"></div>
+                </div>
+                <div class="modal__box__teme" id="teme__btn__red">
+                        <div class="box-teme__selector">
+                                <h3 class="box-teme__selector-cont var--text">Bermellon</h3>
+                        </div>
+                        <div class="teme-red-box-bg4 teme__box"></div>
+                        <div class="teme-red-box-block4 teme__box"></div>
+                </div>
+                <div class="modal__box__teme">Sugerir tema</div>
+                <div class="modal__box__teme"></div>
+                <div class="modal__box__teme"></div>
         </div>
-        <div class="modal__box__teme"></div>
-</div>
-    </section>
-    <!-- <section class="space1"></section> -->
+        </section>
+        <!-- BLOQUES DE MENU -->
     <div class="menu-grid-container">
         <title class="menu-title wh--100"></title>
-        <section class="menu-container-1 wh--100">
+        <section class="menu-container-1 wh--100 var--fontUB">
                 <div class="menu-search">
                         <div class="box__search boxs wh--100">
                                 <div class="circle__search icon--container">
@@ -103,14 +140,22 @@
                         </div>
                 </div>
                 <div class="menu__boe">
-                        <div class="box-boe boxs wh--100"></div>
+                        <div class="box-boe boxs wh--100">
+                                <div class="box-boe__bt wh--100 var--fz4 var--text">
+                                        BOEBOE BOEBOEB
+                                </div>
+                                <div class="box-boe__span"></div>
+                                <div class="box-boe__ot wh--100 var--fz4 var--text">
+                                        BOEBOEB OEBOEBO
+                                </div>
+                        </div>
                 </div>
                 <div class="menu__pys">
                         <div class="menu__productos">
-                                <div class="box__productos boxs wh--100"></div>
+                                <div class="box__productos boxs wh--100 var--fz4 var--text">PYEPYEPYE</div>
                         </div>
                         <div class="menu__servicios">
-                                <div class="box__servicios boxs wh--100"></div>
+                                <div class="box__servicios boxs wh--100 var--fz4 var--text">PYEPYEPYE</div>
                         </div>
                 </div>
                 <div class="space__cont1"></div>
@@ -135,18 +180,88 @@
         </section>
         <!-- <section class="space2"></section> -->
         <section class="menu-container-2 wh--100">
-
                 <div class="menu-new">
                         <div class="box__new boxs wh--100"></div>
                 </div>
+        </section>
+        <section class="menu-container-3 wh--100">
                 <div class="menu-events">
                         <div class="box__events boxs"></div>
                 </div>
         </section>
-        <section class="menu-container-3 wh--100"></section>
-        <footer class="menu-footer wh--100"></footer>
+        <footer class="menu-footer wh--100">
+                <div class="footer__find-us__container footer__container--display">
+                        <div class="footer-title--container var--fz1 var--text">
+                                Encontranos en
+                        </div>
+                        <div class="footer__find-us__box var--text">
+                                <div class="footer-boxs__content">
+                                        <span class="material-icons-outlined footer__icon">email</span>
+                                        <p class="footer__text">Instagram</p>
+                                </div>
+                                <div class="footer-boxs__content">
+                                        <span class="material-icons-outlined footer__icon">email</span>
+                                        <p class="footer__text">Youtube</p>
+                                </div>
+                        </div>
+                        <div class="footer__find-us__outline"></div>
+                </div>
+                <div class="footer__contact__container footer__container--display">
+                        <div class="footer-title--container var--fz1 var--text">
+                                Contacto
+                        </div>
+                                <div class="footer__find-us__box var--text">
+                                <div class="footer-boxs__content">
+                                        <span class="material-icons-outlined footer__icon">whatsapp</span>
+                                        <p class="footer__text">1010101010</p>
+                                </div>
+                                <div class="footer-boxs__content">
+                                        <span class="material-icons-outlined footer__icon">send</span>
+                                        <p class="footer__text">Enviar comentarios</p>
+                                </div>
+                                <div class="footer-boxs__content">
+                                        <span class="material-icons-outlined footer__icon">email</span>
+                                        <p class="footer__text">Gmail</p>
+                                </div> 
+                        </div>
+                </div>
+                <div class="footer__help__container footer__container--display">
+                        <div class="footer-title--container var--fz1 var--text">
+                                Ayuda
+                        </div>
+                        <div class="footer__find-us__box  var--text">
+                                <div class="footer-boxs__content">
+                                        <span class="material-icons-outlined footer__icon">info</span>
+                                        <p class="footer__text">Guia</p>
+                                </div>
+                                <div class="footer-boxs__content">
+                                        <span class="material-icons-outlined footer__icon">question_answer</span>
+                                        <p class="footer__text">Preguntas frecuentes</p>
+                                </div>
+                        </div>
+                </div>
+                <div class="footer__legal__container footer__container--display">
+                        <div class="footer-title--container var--fz1 var--text">
+                                Legales
+                        </div>
+                        <div class="footer__find-us__box var--text">
+                                <div class="footer-boxs__content">
+                                        <span class="material-icons-outlined footer__icon">policy</span>
+                                        <p class="footer__text">Politica de privacidad</p>
+                                </div>
+                                <div class="footer-boxs__content">
+                                        <span class="material-icons-outlined footer__icon">lock_open</span>
+                                        <p class="footer__text">Condiciones de uso</p>
+                                </div>
+                                <div class="footer-boxs__content">
+                                        <span class="material-icons-outlined footer__icon">cookie</span>
+                                        <p class="footer__text">Cookies</p>
+                                </div> 
+                        </div>
+                </div>
+                <!-- <i class="fab fa-instagram var--fz4"></i> -->
+        </footer>
     </div>
-    <!-- <a class="button-home" href="/">Home</a> -->
     <script src="beta_1.0.1.js"></script>
 </body>
 </html>
