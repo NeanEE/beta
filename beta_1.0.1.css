@@ -278,14 +278,36 @@
 
     
     .menu-container-2{
+        display: flex;
+        flex-wrap: wrap;
         outline: .3em solid forestgreen;
+        border-radius: 1.3em;
         grid-area: cont2;
+        background-color: var(--colorblock1);
     }
-        .menu-new{
+        .menu__new__c__title{
             width: 100%;
-            height: 100%;
-            padding: .2em
+            height: 5em;
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 1em;
+            border-radius: 1.3em 1.3em 0 0;
+            background-color: violet;
         }
+        .menu__new__c__content{
+            width: 100%;
+            height: calc(100% - 6em);
+            border-radius: 0 0 1.3em 1.3em;
+            background-color: wheat;
+        }
+            .new__b__c{
+                width: 100%;
+                height: 3em;
+                margin-bottom: .5em;
+                background-color: chocolate;
+
+            }
     .menu-container-3{
         grid-area: cont3;
         background-color: var(--colorblock1);
@@ -399,7 +421,7 @@
 .ubb__container--expand{
     width: 13.2em;
     max-width: 15em;
-    border-radius: 1.5em;
+    border-radius: 1.3em;
 }
 .ubb__container__sm{
     grid-area: sm;
@@ -452,11 +474,11 @@
 
 .u-button__expand-sm{
     width: 100%;
-    border-radius: 1.5em;
+    border-radius: 1.3em;
 }
 .u-button__expand-hm{
     width: 100%;
-    border-radius: 1.5em;
+    border-radius: 1.3em;
     transform: translate(0);
 }
 .u-button__button-d{
@@ -472,7 +494,7 @@
     width: 12em;
     display: flex;
     justify-content: space-around;
-    border-radius: 1.5em;
+    border-radius: 1.3em;
 }
 .simple-mode{
     transition: 300ms;
@@ -744,9 +766,12 @@
     text-align: center;
     margin: auto;
     padding: 2em;
-    border-radius: 1.5em;
+    border-radius: 1.3em;
     overflow-y: scroll;
     background-color: var(--colorblock1);
+    }
+    .modal-temes__container::-webkit-scrollbar{
+        display: none;
     }
     .modal-temes__close-btn{
     width: 2.5em;
@@ -770,7 +795,7 @@
     width: 100%;
     height: 4em;
     margin: 1em 0;
-    border-radius: 1.5em;
+    border-radius: 1.3em;
     display: flex;
     align-items: center;
     cursor: pointer;
@@ -786,7 +811,7 @@
     height: 2em;
     display: flex;
     align-items: center;
-    border-radius: 1.5em;
+    border-radius: 1.3em;
     transform: translate(-2em);
     background-color: var(--colorblock1);
     }
